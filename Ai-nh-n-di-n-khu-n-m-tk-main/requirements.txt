@@ -1,0 +1,25 @@
+flask
+opencv-python
+numpy
+onnxruntime
+insightface
+pillow
+scikit-learn
+scikit-image
+scipy
+tqdm
+requests
+matplotlib
+albumentations
+prettytable
+# FAISS: install faiss-gpu if you have a CUDA-capable GPU, otherwise faiss-cpu.
+# faiss-gpu automatically enables GPU acceleration; the code falls back to CPU
+# when no GPU is detected.
+faiss-cpu
+# faiss-gpu  # uncomment (and remove faiss-cpu above) when CUDA is available
+
+# Database
+psycopg2-binary
+sqlalchemy
+alembic
+python-dotenv

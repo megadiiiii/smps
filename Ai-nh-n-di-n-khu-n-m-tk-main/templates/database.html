@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Database Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 1rem;
+    }
+
+    .nav-tabs button {
+      padding: 0.75rem 1.5rem;
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .nav-tabs button.active {
+      color: #818cf8;
+      border-bottom-color: #818cf8;
+    }
+
+    .nav-tabs button:hover {
+      color: #cbd5e1;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #cbd5e1;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid #475569;
+      border-radius: 8px;
+      color: #e2e8f0;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="file"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #818cf8;
+      box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.1);
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #818cf8, #6366f1);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(129, 140, 248, 0.3);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .image-preview {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #475569;
+      margin-top: 1rem;
+    }
+
+    .result {
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .result.match {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid #22c55e;
+      color: #22c55e;
+    }
+
+    .result.no-match {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid #ef4444;
+      color: #ef4444;
+    }
+
+    .error {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid #ef4444;
+      color: #fca5a5;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .success {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid #22c55e;
+      color: #86efac;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .info {
+      background: rgba(129, 140, 248, 0.1);
+      border: 1px solid #818cf8;
+      color: #a5b4fc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .people-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .person-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid #475569;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .person-item:hover {
+      border-color: #818cf8;
+      background: rgba(30, 41, 59, 0.7);
+    }
+
+    .person-info h3 {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      margin-bottom: 0.25rem;
+    }
+
+    .person-info p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    .person-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    button.delete {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-card {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid #475569;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      color: #94a3b8;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .stat-card .value {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .match-result {
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .match-result.match {
+      background: rgba(34, 197, 94, 0.15);
+      border: 2px solid #22c55e;
+    }
+
+    .match-result.no-match {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid #ef4444;
+    }
+
+    .match-result h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .match-result p {
+      font-size: 1.1rem;
+      margin: 0.25rem 0;
+    }
+
+    .score-display {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      background: linear-gradient(120deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .matches-list {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #475569;
+    }
+
+    .matches-list h3 {
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+
+    .match-item {
+      padding: 0.75rem;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid #475569;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .loading {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(129, 140, 248, 0.3);
+      border-top-color: #818cf8;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      margin-right: 0.5rem;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>🎭 Face Database Management</h1>
+      <p>Register faces and compare with database</p>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+      <button class="tab-btn active" onclick="switchTab('register')">Register Face</button>
+      <button class="tab-btn" onclick="switchTab('compare')">Compare with Database</button>
+      <button class="tab-btn" onclick="switchTab('people')">Registered People</button>
+      <button class="tab-btn" onclick="switchTab('stats')">Statistics</button>
+    </div>
+
+    <!-- Register Tab -->
+    <div id="register" class="tab-content active">
+      <div class="card">
+        <h2 style="margin-bottom: 1.5rem;">Register a New Face</h2>
+        <div class="grid-2">
+          <div>
+            <form id="registerForm">
+              <div class="form-group">
+                <label for="personId">Person ID</label>
+                <input type="text" id="personId" placeholder="e.g., john_doe" required />
+                <small style="color: #94a3b8;">Unique identifier for this person</small>
+              </div>
+
+              <div class="form-group">
+                <label for="personName">Full Name</label>
+                <input type="text" id="personName" placeholder="e.g., John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="faceImage">Face Image</label>
+                <input type="file" id="faceImage" accept="image/*" required />
+                <small style="color: #94a3b8;">Clear photo of face (PNG, JPG, etc.)</small>
+              </div>
+
+              <button type="submit">Register Face</button>
+            </form>
+          </div>
+
+          <div>
+            <div id="imagePreviewContainer" style="display: none;">
+              <p style="color: #94a3b8; margin-bottom: 0.5rem;">Preview:</p>
+              <img id="registerImagePreview" class="image-preview" />
+            </div>
+            <div id="registerResult"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compare Tab -->
+    <div id="compare" class="tab-content">
+      <div class="card">
+        <h2 style="margin-bottom: 1.5rem;">Compare Face with Database</h2>
+        <div>
+          <form id="compareForm">
+            <div class="form-group">
+              <label for="compareImage">Face Image</label>
+              <input type="file" id="compareImage" accept="image/*" required />
+              <small style="color: #94a3b8;">Image to compare</small>
+            </div>
+
+            <div class="grid-2">
+              <div>
+                <div id="compareImagePreviewContainer" style="display: none;">
+                  <p style="color: #94a3b8; margin-bottom: 0.5rem;">Preview:</p>
+                  <img id="compareImagePreview" class="image-preview" />
+                </div>
+              </div>
+              <div>
+                <button type="submit" style="width: 100%;">Compare</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="compareResult"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- People Tab -->
+    <div id="people" class="tab-content">
+      <div class="card">
+        <h2 style="margin-bottom: 1.5rem;">Registered People</h2>
+        <button onclick="loadPeople()" style="margin-bottom: 1.5rem;">Refresh List</button>
+        <div id="peopleList" class="people-list"></div>
+      </div>
+    </div>
+
+    <!-- Stats Tab -->
+    <div id="stats" class="tab-content">
+      <div class="card">
+        <h2 style="margin-bottom: 1.5rem;">Database Statistics</h2>
+        <button onclick="loadStats()" style="margin-bottom: 1.5rem;">Refresh</button>
+        <div id="statsDisplay" class="stats-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching
+    function switchTab(tabName) {
+      // Hide all tabs
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Show selected tab
+      document.getElementById(tabName).classList.add('active');
+      event.target.classList.add('active');
+
+      // Auto-load data for certain tabs
+      if (tabName === 'people') loadPeople();
+      if (tabName === 'stats') loadStats();
+    }
+
+    // Register form
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const personId = document.getElementById('personId').value;
+      const personName = document.getElementById('personName').value;
+      const imageFile = document.getElementById('faceImage').files[0];
+
+      if (!imageFile) {
+        showError('registerResult', 'Please select an image');
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('person_id', personId);
+      formData.append('name', personName);
+      formData.append('image', imageFile);
+
+      try {
+        showLoading('registerResult');
+        const response = await fetch('/api/db/register-face', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          showSuccess('registerResult', `✓ ${data.message}`);
+          document.getElementById('registerForm').reset();
+          document.getElementById('imagePreviewContainer').style.display = 'none';
+          setTimeout(() => loadPeople(), 2000);
+        } else {
+          showError('registerResult', data.error || 'Registration failed');
+        }
+      } catch (error) {
+        showError('registerResult', error.message);
+      }
+    });
+
+    // Image preview for register
+    document.getElementById('faceImage').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        document.getElementById('registerImagePreview').src = url;
+        document.getElementById('imagePreviewContainer').style.display = 'block';
+      }
+    });
+
+    // Compare form
+    document.getElementById('compareForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const imageFile = document.getElementById('compareImage').files[0];
+
+      if (!imageFile) {
+        showError('compareResult', 'Please select an image');
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('image', imageFile);
+
+      try {
+        showLoading('compareResult');
+        const response = await fetch('/api/db/compare', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          displayCompareResult(data);
+        } else {
+          showError('compareResult', data.error || 'Comparison failed');
+        }
+      } catch (error) {
+        showError('compareResult', error.message);
+      }
+    });
+
+    // Image preview for compare
+    document.getElementById('compareImage').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        document.getElementById('compareImagePreview').src = url;
+        document.getElementById('compareImagePreviewContainer').style.display = 'block';
+      }
+    });
+
+    // Load people list
+    async function loadPeople() {
+      const peopleList = document.getElementById('peopleList');
+      try {
+        showLoading('peopleList');
+        const response = await fetch('/api/db/people');
+        const data = await response.json();
+
+        if (data.people.length === 0) {
+          peopleList.innerHTML = '<p style="color: #94a3b8; text-align: center;">No registered people yet</p>';
+          return;
+        }
+
+        peopleList.innerHTML = data.people.map(person => `
+          <div class="person-item">
+            <div class="person-info">
+              <h3>${person.name}</h3>
+              <p>ID: ${person.person_id}</p>
+              <p>Embeddings: ${person.num_embeddings}</p>
+            </div>
+            <div class="person-actions">
+              <button class="delete" onclick="deletePerson('${person.person_id}', '${person.name}')">Delete</button>
+            </div>
+          </div>
+        `).join('');
+      } catch (error) {
+        peopleList.innerHTML = `<p style="color: #ef4444;">Error: ${error.message}</p>`;
+      }
+    }
+
+    // Delete person
+    async function deletePerson(personId, name) {
+      if (!confirm(`Delete "${name}" and all their embeddings?`)) return;
+
+      try {
+        const response = await fetch(`/api/db/person/${personId}`, {
+          method: 'DELETE'
+        });
+
+        if (response.ok) {
+          alert('Deleted successfully');
+          loadPeople();
+        } else {
+          const data = await response.json();
+          alert('Error: ' + (data.error || 'Delete failed'));
+        }
+      } catch (error) {
+        alert('Error: ' + error.message);
+      }
+    }
+
+    // Load statistics
+    async function loadStats() {
+      const statsDisplay = document.getElementById('statsDisplay');
+      try {
+        showLoading('statsDisplay');
+        const response = await fetch('/api/db/stats');
+        const data = await response.json();
+
+        statsDisplay.innerHTML = `
+          <div class="stat-card">
+            <h3>Total Persons</h3>
+            <div class="value">${data.stats.total_persons}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Embeddings</h3>
+            <div class="value">${data.stats.total_embeddings}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Total Comparisons</h3>
+            <div class="value">${data.stats.total_comparisons}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Avg Embeddings/Person</h3>
+            <div class="value">${data.stats.avg_embeddings_per_person.toFixed(2)}</div>
+          </div>
+        `;
+      } catch (error) {
+        statsDisplay.innerHTML = `<p style="color: #ef4444;">Error: ${error.message}</p>`;
+      }
+    }
+
+    // Display compare result
+    function displayCompareResult(data) {
+      const html = `
+        <div class="match-result ${data.match ? 'match' : 'no-match'}">
+          <h2>${data.match ? '✓ MATCH FOUND' : '✕ NO MATCH'}</h2>
+          <p style="font-size: 1.2rem; margin: 1rem 0;">${data.match ? `Person: <strong>${data.name}</strong>` : 'No matching face in database'}</p>
+          <div class="score-display">${(data.similarity * 100).toFixed(2)}%</div>
+          <p style="color: #94a3b8;">Threshold: ${data.threshold}</p>
+          
+          ${data.top_matches && data.top_matches.length > 0 ? `
+            <div class="matches-list">
+              <h3>Top Matches</h3>
+              ${data.top_matches.map((match, idx) => `
+                <div class="match-item">
+                  <div>
+                    <strong>${idx + 1}.</strong> ${match.name} (ID: ${match.person_id})
+                  </div>
+                  <div style="color: #818cf8;">${(match.similarity * 100).toFixed(2)}%</div>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+      `;
+
+      document.getElementById('compareResult').innerHTML = html;
+    }
+
+    // Helper functions
+    function showError(elementId, message) {
+      document.getElementById(elementId).innerHTML = `<div class="error">⚠️ ${message}</div>`;
+    }
+
+    function showSuccess(elementId, message) {
+      document.getElementById(elementId).innerHTML = `<div class="success">✓ ${message}</div>`;
+    }
+
+    function showLoading(elementId) {
+      document.getElementById(elementId).innerHTML = `<div style="text-align: center; color: #818cf8;"><span class="loading"></span>Loading...</div>`;
+    }
+
+    // Load stats on page load
+    window.addEventListener('load', () => {
+      loadStats();
+    });
+  </script>
+</body>
+</html>

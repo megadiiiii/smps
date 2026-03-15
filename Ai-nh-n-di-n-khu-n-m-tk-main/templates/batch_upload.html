@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batch Upload - Face Authorization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .upload-zone {
+      border: 2px dashed #475569;
+      border-radius: 12px;
+      padding: 3rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 2rem;
+    }
+
+    .upload-zone:hover {
+      border-color: #818cf8;
+      background: rgba(129, 140, 248, 0.05);
+    }
+
+    .upload-zone.dragover {
+      border-color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+    }
+
+    .upload-zone svg {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      color: #818cf8;
+    }
+
+    .upload-zone h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #e2e8f0;
+    }
+
+    .upload-zone p {
+      color: #94a3b8;
+      margin-bottom: 1rem;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(120deg, #818cf8, #6366f1);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(129, 140, 248, 0.3);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      background: rgba(100, 116, 139, 0.3);
+      color: #cbd5e1;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(100, 116, 139, 0.5);
+    }
+
+    .file-list {
+      margin-bottom: 2rem;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      border-bottom: 1px solid #334155;
+      font-size: 0.95rem;
+    }
+
+    .file-item:last-child {
+      border-bottom: none;
+    }
+
+    .file-item-name {
+      flex: 1;
+      color: #cbd5e1;
+      word-break: break-all;
+    }
+
+    .file-item-size {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-right: 1rem;
+    }
+
+    .btn-remove {
+      background: rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-remove:hover {
+      background: rgba(239, 68, 68, 0.4);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat {
+      background: rgba(129, 140, 248, 0.1);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #818cf8;
+    }
+
+    .stat-label {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .progress-container {
+      display: none;
+      margin-bottom: 2rem;
+    }
+
+    .progress-container.show {
+      display: block;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(100, 116, 139, 0.3);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #818cf8, #38bdf8);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .status-log {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      max-height: 300px;
+      overflow-y: auto;
+      font-family: 'Courier New', monospace;
+      display: none;
+    }
+
+    .status-log.show {
+      display: block;
+    }
+
+    .log-entry {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    .log-entry:last-child {
+      border-bottom: none;
+    }
+
+    .log-success {
+      color: #86efac;
+    }
+
+    .log-error {
+      color: #fca5a5;
+    }
+
+    .log-info {
+      color: #94a3b8;
+    }
+
+    .control-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 2rem;
+      color: #94a3b8;
+    }
+
+    .empty-state svg {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+
+    .result-summary {
+      background: rgba(129, 140, 248, 0.1);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      display: none;
+    }
+
+    .result-summary.show {
+      display: block;
+    }
+
+    .result-summary h3 {
+      color: #e2e8f0;
+      margin-bottom: 1rem;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .result-item {
+      text-align: center;
+    }
+
+    .result-number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .result-success {
+      color: #86efac;
+    }
+
+    .result-error {
+      color: #fca5a5;
+    }
+
+    .result-pending {
+      color: #fbbf24;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📁 Batch Upload</h1>
+      <p>Upload nhiều ảnh khuôn mặt cùng lúc</p>
+    </div>
+
+    <div class="card">
+      <!-- Upload Zone -->
+      <div class="upload-zone" id="uploadZone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+        <h2>Kéo thả hoặc click để chọn ảnh</h2>
+        <p>Hỗ trợ JPG, PNG, JPEG, BMP, GIF (Tối đa 16MB/file)</p>
+        <button class="btn btn-primary">Chọn ảnh</button>
+        <input type="file" id="fileInput" multiple accept="image/*" />
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value" id="fileCount">0</div>
+          <div class="stat-label">Ảnh đã chọn</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="totalSize">0 MB</div>
+          <div class="stat-label">Dung lượng</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="estimatedTime">-</div>
+          <div class="stat-label">Thời gian dự kiến</div>
+        </div>
+      </div>
+
+      <!-- File List -->
+      <div id="fileListContainer" style="display: none;">
+        <h3 style="margin-bottom: 1rem; color: #e2e8f0;">Danh sách ảnh</h3>
+        <div class="file-list" id="fileList"></div>
+      </div>
+
+      <!-- Control Buttons -->
+      <div class="control-buttons">
+        <button class="btn btn-secondary" id="clearBtn" style="display: none;">Xóa tất cả</button>
+        <button class="btn btn-primary" id="uploadBtn" style="display: none;">Tải lên</button>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+        <div class="progress-text">
+          <span id="progressText">0 / 0</span>
+          <span id="progressPercentage">0%</span>
+        </div>
+      </div>
+
+      <!-- Status Log -->
+      <div class="status-log" id="statusLog"></div>
+
+      <!-- Result Summary -->
+      <div class="result-summary" id="resultSummary">
+        <h3>Kết quả tải lên</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="result-number result-success" id="successCount">0</div>
+            <div class="stat-label">Thành công</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number result-error" id="errorCount">0</div>
+            <div class="stat-label">Lỗi</div>
+          </div>
+          <div class="result-item">
+            <div class="result-number result-pending" id="totalCount">0</div>
+            <div class="stat-label">Tổng cộng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="/" class="btn btn-secondary">← Quay lại</a>
+    </div>
+  </div>
+
+  <script>
+    const uploadZone = document.getElementById('uploadZone');
+    const fileInput = document.getElementById('fileInput');
+    const fileListContainer = document.getElementById('fileListContainer');
+    const fileList = document.getElementById('fileList');
+    const fileCountEl = document.getElementById('fileCount');
+    const totalSizeEl = document.getElementById('totalSize');
+    const clearBtn = document.getElementById('clearBtn');
+    const uploadBtn = document.getElementById('uploadBtn');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressFill = document.getElementById('progressFill');
+    const progressText = document.getElementById('progressText');
+    const progressPercentage = document.getElementById('progressPercentage');
+    const statusLog = document.getElementById('statusLog');
+    const resultSummary = document.getElementById('resultSummary');
+
+    let selectedFiles = [];
+
+    // Drag and drop
+    uploadZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadZone.classList.add('dragover');
+    });
+
+    uploadZone.addEventListener('dragleave', () => {
+      uploadZone.classList.remove('dragover');
+    });
+
+    uploadZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadZone.classList.remove('dragover');
+      handleFiles(e.dataTransfer.files);
+    });
+
+    uploadZone.addEventListener('click', () => fileInput.click());
+
+    fileInput.addEventListener('change', (e) => {
+      handleFiles(e.target.files);
+    });
+
+    function handleFiles(files) {
+      selectedFiles = Array.from(files);
+      updateFileList();
+    }
+
+    function updateFileList() {
+      fileCountEl.textContent = selectedFiles.length;
+
+      if (selectedFiles.length === 0) {
+        fileListContainer.style.display = 'none';
+        clearBtn.style.display = 'none';
+        uploadBtn.style.display = 'none';
+        return;
+      }
+
+      fileListContainer.style.display = 'block';
+      clearBtn.style.display = 'inline-block';
+      uploadBtn.style.display = 'inline-block';
+
+      // Calculate total size
+      const total = selectedFiles.reduce((sum, f) => sum + f.size, 0);
+      const totalMB = (total / 1024 / 1024).toFixed(1);
+      totalSizeEl.textContent = `${totalMB} MB`;
+
+      // Estimate time (assume 2 sec per image)
+      const estimatedSeconds = selectedFiles.length * 2;
+      const minutes = Math.ceil(estimatedSeconds / 60);
+      document.getElementById('estimatedTime').textContent = `~${minutes} phút`;
+
+      // Render file list
+      fileList.innerHTML = selectedFiles
+        .map((file, idx) => {
+          const sizeMB = (file.size / 1024 / 1024).toFixed(2);
+          return `
+            <div class="file-item">
+              <span class="file-item-name">${idx + 1}. ${file.name}</span>
+              <span class="file-item-size">${sizeMB} MB</span>
+              <button class="btn-remove" onclick="removeFile(${idx})">Xóa</button>
+            </div>
+          `;
+        })
+        .join('');
+    }
+
+    function removeFile(idx) {
+      selectedFiles.splice(idx, 1);
+      updateFileList();
+    }
+
+    clearBtn.addEventListener('click', () => {
+      selectedFiles = [];
+      fileInput.value = '';
+      updateFileList();
+    });
+
+    function log(message, type = 'info') {
+      const entry = document.createElement('div');
+      entry.className = `log-entry log-${type}`;
+      const time = new Date().toLocaleTimeString();
+      entry.textContent = `[${time}] ${message}`;
+      statusLog.appendChild(entry);
+      statusLog.scrollTop = statusLog.scrollHeight;
+    }
+
+    uploadBtn.addEventListener('click', async () => {
+      if (selectedFiles.length === 0) return;
+
+      uploadBtn.disabled = true;
+      clearBtn.disabled = true;
+      statusLog.classList.add('show');
+      progressContainer.classList.add('show');
+
+      log(`Bắt đầu tải lên ${selectedFiles.length} ảnh...`, 'info');
+
+      let successCount = 0;
+      let errorCount = 0;
+
+      for (let i = 0; i < selectedFiles.length; i++) {
+        const file = selectedFiles[i];
+        const formData = new FormData();
+        formData.append('image', file);
+
+        try {
+          const response = await fetch('/api/batch_embed', {
+            method: 'POST',
+            body: formData
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            successCount++;
+            log(`✓ ${file.name} - Embedding extracted`, 'success');
+          } else {
+            errorCount++;
+            log(`✗ ${file.name} - ${result.error}`, 'error');
+          }
+        } catch (error) {
+          errorCount++;
+          log(`✗ ${file.name} - ${error.message}`, 'error');
+        }
+
+        // Update progress
+        const progress = ((i + 1) / selectedFiles.length) * 100;
+        progressFill.style.width = `${progress}%`;
+        progressText.textContent = `${i + 1} / ${selectedFiles.length}`;
+        progressPercentage.textContent = `${Math.round(progress)}%`;
+      }
+
+      log('Hoàn thành!', 'success');
+      uploadBtn.disabled = false;
+
+      // Show summary
+      document.getElementById('successCount').textContent = successCount;
+      document.getElementById('errorCount').textContent = errorCount;
+      document.getElementById('totalCount').textContent = selectedFiles.length;
+      resultSummary.classList.add('show');
+    });
+  </script>
+</body>
+</html>

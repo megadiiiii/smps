@@ -1,0 +1,52 @@
+[
+  {
+    "person_id": "person_001",
+    "name": "Alice Johnson #1",
+    "filename": "test_face_001.jpg"
+  },
+  {
+    "person_id": "person_002",
+    "name": "Bob Smith #2",
+    "filename": "test_face_002.jpg"
+  },
+  {
+    "person_id": "person_003",
+    "name": "Carol White #3",
+    "filename": "test_face_003.jpg"
+  },
+  {
+    "person_id": "person_004",
+    "name": "David Brown #4",
+    "filename": "test_face_004.jpg"
+  },
+  {
+    "person_id": "person_005",
+    "name": "Emma Davis #5",
+    "filename": "test_face_005.jpg"
+  },
+  {
+    "person_id": "person_006",
+    "name": "Frank Miller #6",
+    "filename": "test_face_006.jpg"
+  },
+  {
+    "person_id": "person_007",
+    "name": "Grace Wilson #7",
+    "filename": "test_face_007.jpg"
+  },
+  {
+    "person_id": "person_008",
+    "name": "Henry Moore #8",
+    "filename": "test_face_008.jpg"
+  },
+  {
+    "person_id": "person_009",
+    "name": "Isabella Taylor #9",
+    "filename": "test_face_009.jpg"
+  },
+  {
+    "person_id": "person_010",
+    "name": "Jack Anderson #10",
+    "filename": "test_face_010.jpg"
+  }
+]
