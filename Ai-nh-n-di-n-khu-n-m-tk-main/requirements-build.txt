@@ -1,0 +1,26 @@
+# Build dependencies for creating executable
+# Install with: pip install -r requirements-build.txt
+
+# All runtime dependencies from requirements.txt
+flask
+opencv-python
+numpy
+onnxruntime
+insightface
+pillow
+scikit-learn
+scikit-image
+scipy
+tqdm
+requests
+matplotlib
+albumentations
+prettytable
+faiss-cpu
+psycopg2-binary
+sqlalchemy
+alembic
+python-dotenv
+
+# Build tools
+pyinstaller>=6.0.0

@@ -1,0 +1,592 @@
+2026-03-15 17:23:30,783 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:23:30,789 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:23:58,512 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:23:58,516 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:24:00,513 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-15 17:32:31,655 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:32:31,658 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:32:39,924 [DEBUG] Camera #0 không mở được  backend=DSHOW
+2026-03-15 17:32:41,019 [INFO] Camera #0 mở OK  backend=MSMF
+2026-03-15 17:32:41,021 [INFO] Camera bắt đầu stream  source=0
+2026-03-15 17:32:49,994 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:32:49,994 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:32:54,135 [INFO] Camera dừng  source=0
+2026-03-15 17:32:57,016 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:32:57,016 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:33:40,222 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:33:40,225 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:33:42,644 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-15 17:33:43,947 [INFO] DB insert  biển=29K5-6789  status=Vào  time=2026-03-15 17:33:43
+2026-03-15 17:33:54,151 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_173332_930411.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260315_173349_629297.jpg
+2026-03-15 17:33:55,667 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-15 17:34:08,069 [DEBUG] embed OK  shape=(512,)  file=face_20260315_173332_930411.jpg
+2026-03-15 17:34:12,160 [DEBUG] embed OK  shape=(512,)  file=face_full_20260315_173349_629297.jpg
+2026-03-15 17:34:12,161 [INFO] Face similarity  score=0.1190  threshold=0.40  plate=29K5-6789
+2026-03-15 17:34:12,161 [WARNING] Mặt không khớp  score=0.1190 < 0.40
+2026-03-15 17:38:04,578 [INFO] Camera dừng  source=1
+2026-03-15 17:38:17,275 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:38:17,283 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:38:35,329 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-15 17:38:35,331 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-15 17:39:03,295 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:39:03,299 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:39:13,760 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:39:13,760 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:39:19,055 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:39:19,056 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:39:37,388 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:39:37,392 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:39:39,288 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-15 17:39:49,238 [INFO] DB insert  biển=99H7-7060  status=Vào  time=2026-03-15 17:39:49
+2026-03-15 17:40:19,129 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:40:19,129 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:40:20,100 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:40:20,106 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:40:20,264 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 17:40:20,265 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 17:40:29,925 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 17:40:29,928 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 17:40:31,817 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-15 17:40:46,788 [INFO] DB insert  biển=29K5-6789  status=Vào  time=2026-03-15 17:40:46
+2026-03-15 17:40:59,772 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174044_186041.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174055_850609.jpg
+2026-03-15 17:41:02,282 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-15 17:41:13,896 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174044_186041.jpg
+2026-03-15 17:41:21,915 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174055_850609.jpg
+2026-03-15 17:41:21,923 [INFO] Face similarity  score=0.5870  threshold=0.40  plate=29K5-6789
+2026-03-15 17:41:22,036 [INFO] DB insert  biển=29K5-6789  status=Ra  time=2026-03-15 17:41:21
+2026-03-15 17:41:48,884 [INFO] DB insert  biển=29K5-6789  status=Vào  time=2026-03-15 17:41:48
+2026-03-15 17:42:02,591 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174146_210427.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174159_218439.jpg
+2026-03-15 17:42:06,885 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174146_210427.jpg
+2026-03-15 17:42:14,814 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174159_218439.jpg
+2026-03-15 17:42:14,850 [INFO] Face similarity  score=0.0007  threshold=0.40  plate=29K5-6789
+2026-03-15 17:42:14,850 [WARNING] Mặt không khớp  score=0.0007 < 0.40
+2026-03-15 17:42:51,300 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174146_210427.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_174244_545623.jpg
+2026-03-15 17:42:55,521 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174146_210427.jpg
+2026-03-15 17:43:04,378 [DEBUG] embed OK  shape=(512,)  file=face_20260315_174244_545623.jpg
+2026-03-15 17:43:04,387 [INFO] Face similarity  score=-0.0059  threshold=0.40  plate=29K5-6789
+2026-03-15 17:43:04,387 [WARNING] Mặt không khớp  score=-0.0059 < 0.40
+2026-03-15 18:00:24,087 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 18:00:24,092 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 18:00:51,711 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 18:00:51,711 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 18:00:52,412 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-15 18:00:52,413 [INFO] Camera bắt đầu stream  source=1
+2026-03-15 18:01:35,553 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-15 18:01:35,558 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-15 18:01:37,457 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-15 18:01:39,199 [INFO] DB insert  biển=29K5-6789  status=Vào  time=2026-03-15 18:01:39
+2026-03-15 18:01:58,743 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_180128_986053.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_180155_065965.jpg
+2026-03-15 18:02:00,478 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-15 18:02:13,021 [DEBUG] embed OK  shape=(512,)  file=face_20260315_180128_986053.jpg
+2026-03-15 18:02:21,212 [DEBUG] embed OK  shape=(512,)  file=face_20260315_180155_065965.jpg
+2026-03-15 18:02:21,220 [INFO] Face similarity  score=0.1189  threshold=0.40  plate=29K5-6789
+2026-03-15 18:02:21,220 [WARNING] Mặt không khớp  score=0.1189 < 0.40
+2026-03-15 18:02:39,082 [INFO] So sánh mặt  biển=29K5-6789  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_180128_986053.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_180231_370632.jpg
+2026-03-15 18:02:46,983 [DEBUG] embed OK  shape=(512,)  file=face_20260315_180128_986053.jpg
+2026-03-15 18:02:56,150 [DEBUG] embed OK  shape=(512,)  file=face_20260315_180231_370632.jpg
+2026-03-15 18:02:56,178 [INFO] Face similarity  score=0.7762  threshold=0.40  plate=29K5-6789
+2026-03-15 18:02:56,319 [INFO] DB insert  biển=29K5-6789  status=Ra  time=2026-03-15 18:02:56
+2026-03-16 15:18:46,331 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 15:18:46,350 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 15:22:26,102 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 15:22:26,102 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 15:22:41,237 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 15:22:41,238 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 15:29:08,388 [INFO] Camera dừng  source=1
+2026-03-16 15:29:09,201 [INFO] Camera dừng  source=1
+2026-03-16 16:12:23,991 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:12:24,011 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:13:01,399 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:13:01,404 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:13:06,365 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 16:13:06,535 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 16:13:09,864 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 16:13:09,864 [INFO] Loading faiss with AVX2 support.
+2026-03-16 16:13:10,509 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 16:13:10,571 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 16:13:10,572 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:13:19,766 [DEBUG] Camera #1 isOpened nhưng read() thất bại  backend=MSMF
+2026-03-16 16:13:20,175 [INFO] Camera #1 mở OK  backend=MSMF
+2026-03-16 16:13:20,175 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:13:23,136 [INFO] Camera dừng  source=1
+2026-03-16 16:13:55,755 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:13:55,758 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:13:56,589 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 16:13:56,589 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:14:03,917 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 16:14:03,917 [INFO] Loading faiss with AVX2 support.
+2026-03-16 16:14:03,940 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 16:14:03,946 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 16:14:03,947 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:14:34,020 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:15:04,202 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:15:34,396 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:16:04,582 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:16:34,782 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:16:49,353 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 16:16:49,353 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:17:07,965 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:17:07,969 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:17:13,397 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 16:17:19,178 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:17:49,634 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:17:56,197 [INFO] DB insert  biển=99E1-22268  status=Vào  time=2026-03-16 16:17:56
+2026-03-16 16:18:15,134 [INFO] So sánh mặt  biển=99E1-22268  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_161741_959483.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_161807_601291.jpg
+2026-03-16 16:18:16,571 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 16:18:29,685 [DEBUG] embed OK  shape=(512,)  file=face_20260316_161741_959483.jpg
+2026-03-16 16:18:37,804 [DEBUG] embed OK  shape=(512,)  file=face_20260316_161807_601291.jpg
+2026-03-16 16:18:37,828 [INFO] Face similarity  score=0.0080  threshold=0.40  plate=99E1-22268
+2026-03-16 16:18:37,828 [WARNING] Mặt không khớp  score=0.0080 < 0.40
+2026-03-16 16:18:38,475 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:19:08,624 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:19:11,086 [INFO] Camera dừng  source=1
+2026-03-16 16:49:47,390 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 16:49:47,395 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:49:47,402 [DEBUG] interactive is False
+2026-03-16 16:49:47,402 [DEBUG] platform is win32
+2026-03-16 16:49:47,459 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:49:47,463 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:57:08,325 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 16:57:08,329 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 16:57:16,162 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 16:57:16,162 [INFO] Loading faiss with AVX2 support.
+2026-03-16 16:57:17,271 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 16:57:17,281 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 16:57:17,282 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:57:24,355 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 16:57:24,742 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 16:57:39,351 [DEBUG] Camera #1 isOpened nhưng read() thất bại  backend=MSMF
+2026-03-16 16:57:39,540 [INFO] Camera #1 mở OK  backend=MSMF
+2026-03-16 16:57:39,540 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:57:47,611 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:57:51,656 [INFO] Camera #1 mở OK  backend=ANY
+2026-03-16 16:57:51,656 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:57:58,194 [INFO] Camera dừng  source=1
+2026-03-16 16:58:00,889 [INFO] Camera dừng  source=1
+2026-03-16 16:58:04,891 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 16:58:04,891 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 16:58:17,938 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 16:58:32,638 [INFO] Camera dừng  source=1
+2026-03-16 17:03:25,930 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:03:25,934 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:03:30,936 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 17:03:30,937 [INFO] Loading faiss with AVX2 support.
+2026-03-16 17:03:30,964 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 17:03:30,971 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 17:03:30,971 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:03:40,751 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:03:40,752 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:03:51,518 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:03:51,518 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:04:01,298 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:04:31,534 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:05:01,765 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:05:28,713 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:05:29,475 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:05:31,297 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 17:05:33,905 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:05:47,197 [INFO] DB insert  biển=12B1-16888  status=Vào  time=2026-03-16 17:05:46
+2026-03-16 17:06:03,986 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:06:34,189 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:06:54,355 [INFO] Camera dừng  source=1
+2026-03-16 17:19:41,151 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:19:41,155 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:19:46,988 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 17:19:46,988 [INFO] Loading faiss with AVX2 support.
+2026-03-16 17:19:47,012 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 17:19:47,020 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 17:19:47,021 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:21:13,195 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:21:13,196 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:21:27,082 [INFO] Dev Mode: Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_172127_054669.jpg
+2026-03-16 17:21:29,245 [WARNING] face_embedder load failed: Unable to import dependency onnxruntime. 
+2026-03-16 17:21:29,247 [WARNING] embed: embedder module là None, bỏ qua
+2026-03-16 17:21:29,247 [WARNING] Dev Mode: Không extract được embedding từ ảnh
+2026-03-16 17:21:42,134 [INFO] Dev Mode: Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_172142_120206.jpg
+2026-03-16 17:21:44,279 [WARNING] face_embedder load failed: Unable to import dependency onnxruntime. 
+2026-03-16 17:21:44,280 [WARNING] embed: embedder module là None, bỏ qua
+2026-03-16 17:21:44,281 [WARNING] Dev Mode: Không extract được embedding từ ảnh
+2026-03-16 17:22:51,017 [INFO] Camera dừng  source=1
+2026-03-16 17:24:27,281 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:24:27,282 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:24:33,311 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_172433_298310.jpg
+2026-03-16 17:24:35,414 [WARNING] face_embedder load failed: Unable to import dependency onnxruntime. 
+2026-03-16 17:24:35,416 [WARNING] embed: embedder module là None, bỏ qua
+2026-03-16 17:24:35,416 [WARNING] Không extract được embedding từ ảnh
+2026-03-16 17:24:38,851 [INFO] Camera dừng  source=1
+2026-03-16 17:34:28,534 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:34:28,535 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:34:39,294 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_173439_282295.jpg
+2026-03-16 17:34:41,349 [WARNING] face_embedder load failed: Unable to import dependency onnxruntime. 
+2026-03-16 17:34:41,351 [WARNING] embed: embedder module là None, bỏ qua
+2026-03-16 17:34:41,351 [WARNING] Không extract được embedding từ ảnh
+2026-03-16 17:34:46,171 [INFO] Camera dừng  source=1
+2026-03-16 17:39:07,586 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:39:07,596 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:39:07,599 [DEBUG] interactive is False
+2026-03-16 17:39:07,599 [DEBUG] platform is win32
+2026-03-16 17:39:07,599 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:39:07,600 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:39:07,642 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:39:07,646 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:39:12,976 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 17:39:12,977 [INFO] Loading faiss with AVX2 support.
+2026-03-16 17:39:13,009 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 17:39:13,018 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 17:39:13,018 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:39:13,071 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_173913_065869.jpg
+2026-03-16 17:39:14,886 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:39:14,900 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:39:14,903 [DEBUG] interactive is False
+2026-03-16 17:39:14,904 [DEBUG] platform is win32
+2026-03-16 17:39:14,950 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:39:14,955 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:39:15,397 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 17:39:18,799 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_173913_065869.jpg
+2026-03-16 17:39:18,799 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:39:43,112 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:40:13,331 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:40:20,508 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:40:20,509 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:40:43,536 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:40:50,916 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 17:40:52,575 [INFO] DB insert  biển=90B2-45230  status=Vào  time=2026-03-16 17:40:52
+2026-03-16 17:41:03,364 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_174103_361684.jpg
+2026-03-16 17:41:03,639 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_174103_361684.jpg
+2026-03-16 17:41:03,640 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:41:13,721 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:41:43,909 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:42:09,858 [INFO] Camera dừng  source=1
+2026-03-16 17:44:57,933 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:44:57,938 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:45:43,821 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_174543_817610.jpg
+2026-03-16 17:45:45,596 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:45:45,607 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:45:45,610 [DEBUG] interactive is False
+2026-03-16 17:45:45,610 [DEBUG] platform is win32
+2026-03-16 17:45:45,652 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:45:45,656 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:45:46,108 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 17:45:49,389 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_174543_817610.jpg
+2026-03-16 17:45:49,389 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:45:52,308 [INFO] Camera dừng  source=1
+2026-03-16 17:53:07,181 [DEBUG] Camera #0 không mở được  backend=DSHOW
+2026-03-16 17:53:08,106 [INFO] Camera #0 mở OK  backend=MSMF
+2026-03-16 17:53:08,106 [INFO] Camera bắt đầu stream  source=0
+2026-03-16 17:53:20,828 [INFO] Camera dừng  source=0
+2026-03-16 17:53:40,521 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:53:40,522 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:53:48,862 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_175348_858544.jpg
+2026-03-16 17:53:50,670 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:53:50,679 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:53:50,682 [DEBUG] interactive is False
+2026-03-16 17:53:50,682 [DEBUG] platform is win32
+2026-03-16 17:53:50,723 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:53:50,727 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:53:51,176 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 17:53:56,569 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_175348_858544.jpg
+2026-03-16 17:53:56,569 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:55:22,031 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_175522_027112.jpg
+2026-03-16 17:55:22,220 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_175522_027112.jpg
+2026-03-16 17:55:22,220 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:55:24,541 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_175524_537266.jpg
+2026-03-16 17:55:24,742 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_175524_537266.jpg
+2026-03-16 17:55:24,742 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:55:26,741 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_175526_737122.jpg
+2026-03-16 17:55:26,929 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_175526_737122.jpg
+2026-03-16 17:55:26,929 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:55:29,386 [INFO] Camera dừng  source=1
+2026-03-16 17:57:19,409 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:57:19,429 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:57:19,433 [DEBUG] interactive is False
+2026-03-16 17:57:19,433 [DEBUG] platform is win32
+2026-03-16 17:57:19,478 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:57:19,482 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:57:21,670 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:57:21,671 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:57:27,024 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 17:57:27,024 [INFO] Loading faiss with AVX2 support.
+2026-03-16 17:57:27,072 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 17:57:27,081 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 17:57:27,081 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:57:42,403 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 17:57:42,433 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 17:57:56,253 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 17:57:56,261 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:57:56,263 [DEBUG] interactive is False
+2026-03-16 17:57:56,264 [DEBUG] platform is win32
+2026-03-16 17:57:56,300 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 17:57:56,304 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 17:57:58,053 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 17:57:59,122 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:58:25,757 [INFO] Extract embedding từ ảnh đã lưu  path=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260316_175825_753177.jpg
+2026-03-16 17:58:27,070 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 17:58:30,793 [DEBUG] embed OK  shape=(512,)  file=face_full_20260316_175825_753177.jpg
+2026-03-16 17:58:30,794 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-16 17:58:31,044 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:59:01,070 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 17:59:31,293 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:00:01,516 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:00:31,736 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:00:50,071 [INFO] Camera dừng  source=1
+2026-03-16 18:04:45,528 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:04:45,546 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:04:45,549 [DEBUG] interactive is False
+2026-03-16 18:04:45,549 [DEBUG] platform is win32
+2026-03-16 18:04:45,584 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:04:45,593 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:04:47,690 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:04:47,691 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:04:48,887 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:04:48,888 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:04:53,055 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:04:53,056 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:04:53,095 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:04:53,102 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:04:53,103 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:05:11,060 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:05:11,068 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:05:11,070 [DEBUG] interactive is False
+2026-03-16 18:05:11,070 [DEBUG] platform is win32
+2026-03-16 18:05:11,106 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:05:11,110 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:05:12,779 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 18:05:23,249 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:05:53,498 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:06:15,886 [INFO] Camera dừng  source=1
+2026-03-16 18:08:50,407 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:08:50,423 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:08:50,432 [DEBUG] interactive is False
+2026-03-16 18:08:50,433 [DEBUG] platform is win32
+2026-03-16 18:08:50,471 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:08:50,478 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:08:54,338 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 18:08:54,338 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 18:08:58,414 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:08:58,414 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:08:58,445 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:08:58,453 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:08:58,454 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:09:06,155 [DEBUG] Camera #1 isOpened nhưng read() thất bại  backend=MSMF
+2026-03-16 18:09:06,432 [INFO] Camera #1 mở OK  backend=MSMF
+2026-03-16 18:09:06,447 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:09:12,502 [INFO] Camera #1 mở OK  backend=ANY
+2026-03-16 18:09:12,502 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:09:28,475 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:09:58,707 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:10:31,099 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:10:31,118 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:10:31,124 [DEBUG] interactive is False
+2026-03-16 18:10:31,125 [DEBUG] platform is win32
+2026-03-16 18:10:31,164 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:10:31,168 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:10:31,337 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:10:31,338 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:10:39,036 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:10:39,037 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:10:39,065 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:10:39,079 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:10:39,080 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:10:40,411 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:10:40,412 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:10:51,782 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:10:51,792 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:10:51,795 [DEBUG] interactive is False
+2026-03-16 18:10:51,795 [DEBUG] platform is win32
+2026-03-16 18:10:51,829 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:10:51,833 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:10:53,529 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 18:11:09,203 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:11:21,900 [INFO] Camera dừng  source=1
+2026-03-16 18:15:39,955 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:15:39,971 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:15:39,971 [DEBUG] interactive is False
+2026-03-16 18:15:39,971 [DEBUG] platform is win32
+2026-03-16 18:15:40,033 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:15:40,033 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:15:43,970 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 18:15:43,970 [DEBUG] Camera #1 không mở được  backend=DSHOW
+2026-03-16 18:15:49,151 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:15:49,151 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:15:49,181 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:15:49,189 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:15:49,189 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:15:56,093 [DEBUG] Camera #1 isOpened nhưng read() thất bại  backend=MSMF
+2026-03-16 18:15:56,264 [INFO] Camera #1 mở OK  backend=MSMF
+2026-03-16 18:15:56,264 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:16:03,560 [INFO] Camera #1 mở OK  backend=ANY
+2026-03-16 18:16:03,560 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:16:15,896 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:16:15,907 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:16:15,909 [DEBUG] interactive is False
+2026-03-16 18:16:15,909 [DEBUG] platform is win32
+2026-03-16 18:16:15,946 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:16:15,950 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:16:17,758 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 18:16:18,872 [INFO] So sánh mặt  biển=99H7-7060  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_173944_256275.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_181604_744004.jpg
+2026-03-16 18:16:19,606 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:16:21,145 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 18:16:34,725 [ERROR] embed error: Could not generate embedding: no face found in cropped region. -> E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_173944_256275.jpg
+2026-03-16 18:16:34,817 [WARNING] Không extract được embedding  in=False  out=True
+2026-03-16 18:16:41,364 [INFO] Camera dừng  source=1
+2026-03-16 18:16:41,727 [INFO] Camera dừng  source=1
+2026-03-16 18:18:30,504 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:18:30,535 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:18:30,538 [DEBUG] interactive is False
+2026-03-16 18:18:30,538 [DEBUG] platform is win32
+2026-03-16 18:18:30,571 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:18:30,578 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:18:36,640 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:18:36,641 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:18:37,690 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:18:37,691 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:18:37,714 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:18:37,722 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:18:37,722 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:18:38,448 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:18:38,449 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:18:51,454 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:18:51,462 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:18:51,464 [DEBUG] interactive is False
+2026-03-16 18:18:51,465 [DEBUG] platform is win32
+2026-03-16 18:18:51,500 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:18:51,504 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:18:53,187 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 18:19:07,865 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:19:31,974 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 18:19:42,368 [ERROR] embed error: Could not generate embedding: no face found in cropped region. -> E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_173944_256275.jpg
+2026-03-16 18:19:49,648 [ERROR] embed error: Could not generate embedding: no face found in cropped region. -> E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260315_173944_256275.jpg
+2026-03-16 18:19:50,342 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:20:14,953 [INFO] DB insert  biển=66L1-40588  status=Vào  time=2026-03-16 18:20:14
+2026-03-16 18:20:20,524 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:20:37,385 [INFO] So sánh mặt  biển=66L1-40588  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_182010_232380.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_182028_056624.jpg
+2026-03-16 18:20:41,287 [DEBUG] embed OK  shape=(512,)  file=face_20260316_182010_232380.jpg
+2026-03-16 18:20:50,720 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:20:54,476 [INFO] Face similarity  score=-0.0246  threshold=0.40  plate=66L1-40588
+2026-03-16 18:20:54,476 [WARNING] Mặt không khớp  score=-0.0246 < 0.40
+2026-03-16 18:21:20,921 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:21:28,694 [INFO] DB insert  biển=664L1-40588  status=Vào  time=2026-03-16 18:21:28
+2026-03-16 18:21:36,628 [INFO] Camera dừng  source=1
+2026-03-16 18:22:35,477 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:22:35,477 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:22:35,477 [DEBUG] interactive is False
+2026-03-16 18:22:35,490 [DEBUG] platform is win32
+2026-03-16 18:22:35,530 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:22:35,534 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:22:40,042 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:22:40,043 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:22:42,804 [DEBUG] Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-03-16 18:22:42,805 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:22:42,828 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:22:42,836 [INFO] FaissIndex: FAISS CPU (use_gpu=False)
+2026-03-16 18:22:42,836 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:22:43,079 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:22:43,080 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:22:56,266 [DEBUG] matplotlib data path: E:\Code\Python\FaceAuthorization\.venv\lib\site-packages\matplotlib\mpl-data
+2026-03-16 18:22:56,273 [DEBUG] CONFIGDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:22:56,275 [DEBUG] interactive is False
+2026-03-16 18:22:56,276 [DEBUG] platform is win32
+2026-03-16 18:22:56,311 [DEBUG] CACHEDIR=C:\Users\tanh1\.matplotlib
+2026-03-16 18:22:56,314 [DEBUG] Using fontManager instance from C:\Users\tanh1\.matplotlib\fontlist-v390.json
+2026-03-16 18:22:57,934 [DEBUG] Loaded backend Agg version v2.2.
+2026-03-16 18:22:59,009 [INFO] DB insert  biển=66L1-40588  status=Vào  time=2026-03-16 18:22:58
+2026-03-16 18:23:12,899 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:23:16,105 [INFO] So sánh mặt  biển=66L1-40588  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_182249_564019.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_182307_050274.jpg
+2026-03-16 18:23:17,886 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 18:23:28,698 [DEBUG] embed OK  shape=(512,)  file=face_20260316_182249_564019.jpg
+2026-03-16 18:23:38,577 [INFO] Face similarity  score=0.8424  threshold=0.40  plate=66L1-40588
+2026-03-16 18:23:38,691 [INFO] DB insert  biển=66L1-40588  status=Ra  time=2026-03-16 18:23:38
+2026-03-16 18:23:43,053 [DEBUG] FaissIndex.rebuild: 0 vectors
+2026-03-16 18:23:47,165 [INFO] Camera dừng  source=1
+2026-03-16 18:34:06,852 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:34:06,853 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:34:07,099 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:34:07,125 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:34:07,132 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 18:34:07,714 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:34:07,714 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:35:35,007 [INFO] DB insert  biển=29MD1-01353  status=Vào  time=2026-03-16 18:35:34
+2026-03-16 18:35:53,493 [INFO] So sánh mặt  biển=29MD1-01353  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_183533_073637.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_183545_810884.jpg
+2026-03-16 18:35:55,385 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 18:36:09,019 [INFO] Face similarity  score=0.7135  threshold=0.40  plate=29MD1-01353
+2026-03-16 18:36:09,188 [INFO] DB insert  biển=29MD1-01353  status=Ra  time=2026-03-16 18:36:09
+2026-03-16 18:36:20,151 [INFO] Camera dừng  source=1
+2026-03-16 18:36:20,913 [INFO] Camera dừng  source=1
+2026-03-16 18:39:34,517 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:39:34,550 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:39:35,096 [INFO] Camera #1 mở OK  backend=MSMF
+2026-03-16 18:39:35,097 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:39:42,851 [INFO] Camera dừng  source=1
+2026-03-16 18:39:45,805 [INFO] Camera dừng  source=1
+2026-03-16 18:39:53,432 [INFO] Loading faiss with AVX2 support.
+2026-03-16 18:39:54,079 [INFO] Successfully loaded faiss with AVX2 support.
+2026-03-16 18:39:54,138 [INFO] FaissIndex: không tìm thấy GPU → dùng FAISS CPU
+2026-03-16 18:55:02,264 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:55:02,265 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:55:06,311 [INFO] Camera dừng  source=1
+2026-03-16 18:55:34,230 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:55:34,231 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:55:35,363 [INFO] Camera #1 mở OK  backend=DSHOW
+2026-03-16 18:55:35,364 [INFO] Camera bắt đầu stream  source=1
+2026-03-16 18:56:42,097 [INFO] DB insert  biển=29T8-2843  status=Vào  time=2026-03-16 18:56:41
+2026-03-16 18:56:58,139 [INFO] So sánh mặt  biển=29T8-2843  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_185634_730561.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_185651_224326.jpg
+2026-03-16 18:56:59,723 [INFO] face_embedder loaded OK từ E:\Code\Python\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-16 18:57:14,513 [INFO] Face similarity  score=0.9119  threshold=0.40  plate=29T8-2843
+2026-03-16 18:57:14,634 [INFO] DB insert  biển=29T8-2843  status=Ra  time=2026-03-16 18:57:14
+2026-03-16 18:58:09,795 [INFO] DB insert  biển=17M6-5903  status=Vào  time=2026-03-16 18:58:09
+2026-03-16 18:58:34,186 [INFO] So sánh mặt  biển=17M6-5903  entry=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_185806_764294.jpg  exit=E:\Code\Python\FaceAuthorization\smart-parking-management-system\result\face\face_20260316_185822_862210.jpg
+2026-03-16 18:58:46,667 [INFO] Face similarity  score=0.0653  threshold=0.40  plate=17M6-5903
+2026-03-16 18:58:46,668 [WARNING] Mặt không khớp  score=0.0653 < 0.40
+2026-03-16 18:58:52,681 [INFO] Camera dừng  source=1
+2026-03-16 18:58:53,435 [INFO] Camera dừng  source=1
+2026-03-18 01:15:44,923 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:15:44,925 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:15:47,786 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:15:47,787 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:17:21,225 [INFO] Camera dừng  source=2
+2026-03-18 01:17:21,994 [INFO] Camera dừng  source=2
+2026-03-18 01:29:03,297 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:29:03,298 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:29:04,625 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:29:04,625 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:29:39,914 [INFO] Camera dừng  source=2
+2026-03-18 01:29:40,683 [INFO] Camera dừng  source=2
+2026-03-18 01:29:46,712 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:29:46,712 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:29:49,414 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:29:49,414 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:32:10,083 [INFO] Camera dừng  source=2
+2026-03-18 01:32:10,849 [INFO] Camera dừng  source=2
+2026-03-18 01:33:28,298 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:33:28,299 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:33:31,458 [INFO] Camera #0 mở OK  backend=DSHOW
+2026-03-18 01:33:31,458 [INFO] Camera bắt đầu stream  source=0
+2026-03-18 01:34:39,532 [INFO] Extract embedding từ ảnh đã lưu  path=D:\FaceAuthorization\smart-parking-management-system\result\fullface\face_full_20260318_013439_527409.jpg
+2026-03-18 01:34:40,614 [INFO] face_embedder loaded OK từ D:\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-18 01:34:47,644 [INFO] Đã extract embedding thành công  shape=(512,)
+2026-03-18 01:35:32,387 [INFO] Camera #0 mở OK  backend=DSHOW
+2026-03-18 01:35:32,388 [INFO] Camera bắt đầu stream  source=0
+2026-03-18 01:35:37,609 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 01:35:37,610 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 01:36:32,475 [INFO] DB insert  biển=59V1-79379  status=Vào  time=2026-03-18 01:36:32
+2026-03-18 01:36:49,516 [INFO] So sánh mặt  biển=59V1-79379  entry=D:\FaceAuthorization\smart-parking-management-system\result\face\face_20260318_013630_816049.jpg  exit=D:\FaceAuthorization\smart-parking-management-system\result\face\face_20260318_013641_788781.jpg
+2026-03-18 01:36:50,880 [INFO] face_embedder loaded OK từ D:\FaceAuthorization\Ai-nh-n-di-n-khu-n-m-tk-main\modules\face_embedder.py
+2026-03-18 01:37:14,038 [INFO] Face similarity  score=0.3699  threshold=0.40  plate=59V1-79379
+2026-03-18 01:37:14,039 [WARNING] Mặt không khớp  score=0.3699 < 0.40
+2026-03-18 01:37:27,214 [INFO] So sánh mặt  biển=59V1-79379  entry=D:\FaceAuthorization\smart-parking-management-system\result\face\face_20260318_013630_816049.jpg  exit=D:\FaceAuthorization\smart-parking-management-system\result\face\face_20260318_013718_813925.jpg
+2026-03-18 01:37:44,383 [INFO] Face similarity  score=0.3369  threshold=0.40  plate=59V1-79379
+2026-03-18 01:37:44,383 [WARNING] Mặt không khớp  score=0.3369 < 0.40
+2026-03-18 01:37:47,906 [INFO] Camera dừng  source=0
+2026-03-18 01:37:48,232 [INFO] Camera dừng  source=2
+2026-03-18 02:29:39,267 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 02:29:39,269 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 02:29:48,193 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 02:29:48,194 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 02:29:49,564 [INFO] Camera dừng  source=2
+2026-03-18 02:29:50,906 [INFO] Camera #0 mở OK  backend=DSHOW
+2026-03-18 02:29:50,907 [INFO] Camera bắt đầu stream  source=0
+2026-03-18 02:29:53,952 [INFO] Camera dừng  source=2
+2026-03-18 02:29:56,733 [INFO] Camera #2 mở OK  backend=DSHOW
+2026-03-18 02:29:56,774 [INFO] Camera bắt đầu stream  source=2
+2026-03-18 02:31:22,432 [INFO] Camera dừng  source=0
+2026-03-18 02:31:22,755 [INFO] Camera dừng  source=2

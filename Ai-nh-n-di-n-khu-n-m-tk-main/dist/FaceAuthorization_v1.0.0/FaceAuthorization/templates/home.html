@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Authorization - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(120deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    
+    .header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+      border-color: #818cf8;
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(129, 140, 248, 0.2);
+    }
+    
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #e2e8f0;
+    }
+    
+    .card p {
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+    
+    .features li {
+      padding: 0.5rem 0;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+    }
+    
+    .features li:before {
+      content: "✓";
+      color: #86efac;
+      margin-right: 0.75rem;
+      font-weight: bold;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(120deg, #818cf8, #6366f1);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(129, 140, 248, 0.3);
+    }
+    
+    .btn-secondary {
+      background: rgba(100, 116, 139, 0.3);
+      color: #cbd5e1;
+    }
+    
+    .btn-secondary:hover {
+      background: rgba(100, 116, 139, 0.5);
+    }
+    
+    .info-box {
+      background: rgba(129, 140, 248, 0.1);
+      border-left: 4px solid #818cf8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    
+    .info-box h3 {
+      color: #818cf8;
+      margin-bottom: 0.5rem;
+    }
+    
+    .info-box p {
+      color: #cbd5e1;
+    }
+    
+    .emoji {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎯 Face Authorization</h1>
+      <p>Hệ thống nhận diện và xác thực khuôn mặt tiên tiến. Chọn chế độ làm việc dưới đây.</p>
+    </div>
+    
+    <div class="info-box">
+      <h3>🆕 Tính Năng Mới: Batch Upload</h3>
+      <p>Tải lên hàng loạt ảnh khuôn mặt cùng lúc! Hoàn hảo cho việc import 50-100+ ảnh. Xem <strong>Batch Upload</strong> dưới đây.</p>
+    </div>
+    
+    <div class="grid">
+      <!-- Batch Upload -->
+      <div class="card">
+        <span class="emoji">📁</span>
+        <h2>Batch Upload</h2>
+        <p>Tải lên nhiều ảnh cùng lúc với giao diện drag-drop thân thiện.</p>
+        <ul class="features">
+          <li>Kéo thả ảnh hoặc click chọn folder</li>
+          <li>Real-time progress tracking</li>
+          <li>Hỗ trợ 100+ ảnh</li>
+          <li>Xem chi tiết lỗi từng ảnh</li>
+        </ul>
+        <a href="/batch-upload" class="btn">Mở Batch Upload</a>
+      </div>
+      
+      <!-- Face Verification -->
+      <div class="card">
+        <span class="emoji">🔐</span>
+        <h2>1:1 Xác Thực</h2>
+        <p>So sánh khuôn mặt trong 2 ảnh để xác định có phải cùng 1 người không.</p>
+        <ul class="features">
+          <li>Upload 2 ảnh để so sánh</li>
+          <li>Hiển thị độ tương đồng %</li>
+          <li>Ngưỡng tùy chỉnh</li>
+          <li>Hỗ trợ xử lý nhiều khuôn mặt</li>
+        </ul>
+        <a href="/" class="btn">Kiểm Tra Xác Thực</a>
+      </div>
+      
+      <!-- Database Management -->
+      <div class="card">
+        <span class="emoji">💾</span>
+        <h2>Quản Lý Database</h2>
+        <p>Quản lý khuôn mặt đã đăng ký, tìm kiếm, và nhận diện 1:N.</p>
+        <ul class="features">
+          <li>Xem danh sách người đã đăng ký</li>
+          <li>Tìm kiếm khuôn mặt trong database</li>
+          <li>Nhận diện 1:N (so với tất cả)</li>
+          <li>Quản lý embedding (cần PostgreSQL)</li>
+        </ul>
+        <a href="/database" class="btn">Mở Database</a>
+      </div>
+      
+      <!-- API Docs -->
+      <div class="card">
+        <span class="emoji">⚙️</span>
+        <h2>API & Developer</h2>
+        <p>Tích hợp vào ứng dụng của bạn bằng REST API.</p>
+        <ul class="features">
+          <li>POST /api/batch_embed - Extract embedding</li>
+          <li>POST /api/batch_register - Register with metadata</li>
+          <li>GET /api/db/people - Liệt kê người</li>
+          <li>Detailed API docs & examples</li>
+        </ul>
+        <a href="/BATCH_UPLOAD_GUIDE.md" class="btn btn-secondary">API Documentation</a>
+      </div>
+      
+      <!-- Quick Start -->
+      <div class="card">
+        <span class="emoji">🚀</span>
+        <h2>Quick Start</h2>
+        <p>Hướng dẫn nhanh để bắt đầu.</p>
+        <ul class="features">
+          <li>Tạo 50 test images</li>
+          <li>Batch upload qua web</li>
+          <li>Hoặc dùng Python script</li>
+          <li>Xem kết quả chi tiết</li>
+        </ul>
+        <button class="btn" onclick="showQuickStart()">Xem Quick Start</button>
+      </div>
+      
+      <!-- Settings -->
+      <div class="card">
+        <span class="emoji">⚡</span>
+        <h2>Performance & Status</h2>
+        <p>Kiểm tra trạng thái hệ thống và các thông tin chi tiết.</p>
+        <ul class="features">
+          <li id="status-db">✓ Database: Offline</li>
+          <li id="status-face">✓ Face Service: Loading...</li>
+          <li id="status-faiss">✓ FAISS Index: N/A</li>
+          <li id="status-registered">✓ Registered: -</li>
+        </ul>
+        <button class="btn btn-secondary" onclick="checkHealth()">Kiểm Tra Status</button>
+      </div>
+    </div>
+    
+    <!-- Quick Start Info -->
+    <div id="quickstart" class="info-box" style="display: none;">
+      <h3>🚀 Quick Start</h3>
+      <p><strong>Bước 1:</strong> Tạo 50 ảnh test</p>
+      <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; overflow-x: auto; color: #86efac;">
+python generate_test_images.py --count 50 --output test_faces
+      </pre>
+      
+      <p style="margin-top: 1rem;"><strong>Bước 2:</strong> Tải lên</p>
+      <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+        <li><strong>Cách A (dễ):</strong> <a href="/batch-upload" style="color: #38bdf8;">Mở Batch Upload</a> → kéo thả folder test_faces → Tải lên</li>
+        <li><strong>Cách B (script):</strong>
+          <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; margin-top: 0.5rem; color: #86efac;">
+python test_batch_upload.py test_faces
+          </pre>
+        </li>
+      </ul>
+      
+      <p style="margin-top: 1rem;"><strong>Bước 3:</strong> Xem kết quả</p>
+      <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 4px; margin-top: 0.5rem; color: #86efac;">
+curl http://localhost:5000/api/db/stats
+      </pre>
+    </div>
+  </div>
+  
+  <script>
+    function showQuickStart() {
+      document.getElementById('quickstart').style.display = 'block';
+    }
+    
+    async function checkHealth() {
+      try {
+        const response = await fetch('/api/health');
+        const data = await response.json();
+        
+        document.getElementById('status-face').textContent = data.status === 'ok' ? '✓ Face Service: Ready' : '✗ Face Service: Error';
+        document.getElementById('status-faiss').textContent = data.faiss_index_loaded ? '✓ FAISS Index: Loaded' : '⚠️ FAISS Index: Not loaded';
+        document.getElementById('status-registered').textContent = `✓ Registered: ${data.num_registered} people`;
+      } catch (e) {
+        console.log('Health check failed:', e);
+      }
+      
+      // Check DB
+      try {
+        const response = await fetch('/api/db/stats');
+        const data = await response.json();
+        document.getElementById('status-db').textContent = '✓ Database: Connected';
+      } catch (e) {
+        document.getElementById('status-db').textContent = '✗ Database: Offline (PostgreSQL needed)';
+      }
+    }
+    
+    // Check health on load
+    window.addEventListener('load', checkHealth);
+  </script>
+</body>
+</html>
